@@ -1,10 +1,11 @@
+
 Total_Nuked = 0
 nuked = false
 
 function warp(worlds)
     for i = 1,5 do
         if getBot():getWorld().name:upper() ~= worlds:upper() then
-            getBot():warp(worlds)
+            getBot():sendPacket(3,"action|join_request\nname|"..worlds:upper().."\ninvitedWorld|0")
             sleep(MADS.DelayWarp)
         end
     end
