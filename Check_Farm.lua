@@ -1,4 +1,3 @@
-
 Total_Nuked = 0
 nuked = false
 
