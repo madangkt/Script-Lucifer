@@ -4,7 +4,7 @@ nuked = false
 function warp(worlds)
     for i = 1,5 do
         if getBot():getWorld().name:upper() ~= worlds:upper() then
-            getBot():sendPacket("action|join_request\nname|"..world:upper().."\ninvitedWorld|0",3)
+            getBot():sendPacket("action|join_request\nname|"..worlds:upper().."\ninvitedWorld|0",3)
             sleep(MADS.DelayWarp)
         end
     end
