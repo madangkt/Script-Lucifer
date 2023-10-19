@@ -1,17 +1,16 @@
 Total_Nuked = 0
 nuked = false
 
-function warp(worlds)
-    for i = 1,5 do
-        if not getBot():isInWorld(worlds:upper()) then
-            getBot():sendPacket(3,"action|join_request\nname|"..worlds:upper().."\ninvitedWorld|0")
-            sleep(MADS.DelayWarp)
+function warp(world)
+    local negro = 0
+    while getBot():getWorld().name:upper() ~= world:upper() and not nuked do
+        getBot():sendPacket(3,"action|join_request\nname|"..world:upper().."\ninvitedWorld|0")
+        sleep(MADS.DelayWArp)
+        if negro == 5 then
+            nuked = true
         else
-            break 
+            negro = negro + 1
         end
-    end
-    if getBot():getWorld().name:upper() ~= worlds:upper() then
-        nuked = true 
     end
 end
 local function log(text) 
