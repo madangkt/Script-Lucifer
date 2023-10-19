@@ -76,12 +76,12 @@ while true do
             sleep(math.ceil(MADS.DelayAfk / 3))
             posil = scanFossil()
             sleep(math.ceil(MADS.DelayAfk / 3))
-            log(MADS.FarmList[i]:upper().." SAFE | ".."[ "..treek.." Ready & "..treeks.." Not Ready ] | "..posil.." Fossil")
-            infokan(MADS.FarmList[i]:upper().." SAFE | ".."[ "..treek.." Ready & "..treeks.." Not Ready ] | "..posil.." Fossil")
+            log(farm:upper().." SAFE | ".."[ "..treek.." Ready & "..treeks.." Not Ready ] | "..posil.." Fossil")
+            infokan(farm:upper().." SAFE | ".."[ "..treek.." Ready & "..treeks.." Not Ready ] | "..posil.." Fossil")
             sleep(100)
         else
-            log(MADS.FarmList[i]:upper().." | NUKED")
-            infokan(MADS.FarmList[i]:upper().." | NUKED")
+            log(farm:upper().." | NUKED")
+            infokan(farm:upper().." | NUKED")
             sleep(100)
             nuked = false
             Total_Nuked = Total_Nuked + 1
