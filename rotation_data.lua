@@ -1,1 +1,3 @@
-madang123
+return {
+  "madang123"
+}
