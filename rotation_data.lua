@@ -9,4 +9,5 @@ dataUser = {
     'RadenDimasAbimanyu|1153267012391411753',
     'scarvion|490818056415739904',
     'Kanjud|225560923698364427',
+    'rinablu|583920648821145600'
 }
